@@ -1,0 +1,63 @@
+
+@import "../utility-styles/main.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: $color-grey-dark-3;
+  text-transform: uppercase;
+}
+// ::selection {
+//   background:rgba(252, 229, 55, 0.72);
+// }
+
+
+html {
+   font-size: 81.25%; //13px == 1rem
+   scroll-behavior: smooth;
+  ///// MIN WIDTH RULES GOES IN ASCENDING ORDER //////
+
+  //////// MAX-WIDTH RULES -- IN DESCENDING ORDER ////////
+
+  @include responsive(1280px) {
+     font-size: 62.5%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: $color-grey-light-2;
+  padding: 2.5rem 3.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+textarea, 
+select {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  &:active,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+textarea {
+  cursor: text;
+}

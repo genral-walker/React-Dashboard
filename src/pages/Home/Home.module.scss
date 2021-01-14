@@ -1,0 +1,8 @@
+
+@import '../../utility-styles/main.scss';
+
+.statsWrapper {
+    margin-top: 4rem;
+    @include flex-between;
+    flex-wrap: wrap;
+}
