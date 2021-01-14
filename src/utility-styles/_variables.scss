@@ -1,9 +1,15 @@
 
-// COLORS
-
-$color-primary: rgba(235, 254, 255, 0.159);
-
+// COLORS  
+  
+// rgba(235, 254, 255, 0.159);    
+$color-primary: rgba(196, 243, 255, 0.096);
+    
 $color-secondary: #d8d8d8d7;
+
+$color-blue: rgb(94, 169, 216);
+$color-green: rgb(159, 216, 94);
+$color-orange: rgb(240, 165, 27);
+$color-red: rgb(255, 61, 94);
 
 $color-grey-light: #f3f3f3;
 $color-grey-light-2: #f7f7f7;
@@ -25,3 +31,6 @@ $color-black: #000;
 
 $box-Shadow: 4px -1px 5px -6px $color-grey-dark-2,
   1px 2px 3px $color-grey-dark-2;
+
+$box-Shadow-2: 4px -1px 5px -6px $color-secondary,
+  1px 2px 3px $color-secondary;  

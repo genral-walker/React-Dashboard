@@ -23,6 +23,13 @@
     @include flex-between;
     font-weight: 600;
     margin-top: .5rem;
+    
+    .spanColorGreen {
+      color: $color-green;
+    }
+    .spanColorRed {
+      color: $color-red;
+    }
   }
 }
 

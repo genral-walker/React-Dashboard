@@ -1,7 +1,6 @@
 
 import React from "react";
 import styles from "./StatsBox.module.scss";
-import colors from '../../static';
 
 const StatsBox = (props) => {
   const { detailStat, detailName, detailPercent, Svg, bg } = props;
@@ -12,7 +11,7 @@ const StatsBox = (props) => {
         <h3>{detailStat}</h3>
         <p>
           <span>{detailName}</span> 
-          <span style={{color: `${detailPercent.includes('+') ? `${colors.green}` : `${colors.red}`}`}} >{detailPercent}</span>
+          <span className={detailPercent.includes('+') ? styles.spanColorGreen : styles.spanColorRed}>{detailPercent}</span>
         </p>
       </div>
 

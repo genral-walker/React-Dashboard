@@ -9,12 +9,11 @@
 
 
 .charts {
-    border: 1px solid red;
     margin-top: 3rem;
     height: 30rem;
     width: 100%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1fr, 3);
+    gap: 2rem;
 }

@@ -1,0 +1,30 @@
+@import "../../utility-styles/main.scss";
+
+.box {
+  box-shadow: $box-Shadow-2;
+}
+
+.titleBox {
+  @include flex-between;
+  background: $color-primary;
+  height: 22%;
+  border-bottom: 2px solid $color-grey-light-3;
+  padding: 0 1.5rem;
+
+  .icons {
+    @include flex-between;
+    flex: 0 0 20%;
+    height: 100%;
+
+    & > * {
+      fill: $color-grey-dark;
+      height: 55%;
+      width: 20%;
+      cursor: pointer;
+
+      &:nth-of-type(2){
+        height: 45%;
+      }
+    }
+  }
+}

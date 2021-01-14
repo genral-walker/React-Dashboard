@@ -1,2 +1,15 @@
 
 @import '../../utility-styles/main.scss';
+
+select {
+    background: transparent;
+    padding-right: 1.3rem;
+    color: $color-grey-dark;
+    letter-spacing: 0.4px;
+    font-size: 0.81rem;
+    font-weight: 600;
+
+    option {
+      background: $color-secondary;
+    }
+}
