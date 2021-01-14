@@ -45,7 +45,13 @@ const Home = () => {
           Svg={DataSVG}
           bg= {colors.red}
         />
+    
       </div>
+
+      <section className={styles.charts}>
+
+      </section>
+
     </>
   );
 };
