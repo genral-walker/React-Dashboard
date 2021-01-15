@@ -6,6 +6,12 @@
   // opacity: 0;
   // transform: translateY(-2rem);
   // transition: .7s;
+     
+     &:not(:first-of-type) {
+     @include responsive(720px) {
+      margin-top: 5.5rem; 
+    }  }
+
 
   // Classlist
   &.show {
@@ -61,7 +67,7 @@
     @include responsive(1280px) {
       flex: 0 0 35%;
     }
-    @include responsive(1200px) {
+    @include responsive(1200px) { 
       flex: 0 0 37.5%;
     }
     @include responsive(1100px) {
