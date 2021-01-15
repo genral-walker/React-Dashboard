@@ -16,6 +16,6 @@ This Project was built with:
 
 ### `PS`
 
-For verification purposes, make sure to refresh the page when you go below 720px.\
+For verification purposes, make sure to refresh the page when you go below 720px.
 
-Also when on mobile the charts don't allow for continuoes smooth scroll, try scrolling a little above the chart spaces
+Also when on mobile the charts don't allow for continuous smooth scroll, try scrolling a little above the chart spaces.
