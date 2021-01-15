@@ -3,9 +3,9 @@
 .box {
   box-shadow: $box-Shadow-2;
   height: max-content;
-  opacity: 0;
-  transform: translateY(-2rem);
-  transition: .7s;
+  // opacity: 0;
+  // transform: translateY(-2rem);
+  // transition: .7s;
 
   // Classlist
   &.show {
