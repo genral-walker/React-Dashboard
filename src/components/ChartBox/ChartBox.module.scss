@@ -7,10 +7,10 @@
   // transform: translateY(-2rem);
   // transition: .7s;
      
-     &:not(:first-of-type) {
+     
      @include responsive(720px) {
-      margin-top: 5.5rem; 
-    }  }
+      margin-bottom: 5.5rem; 
+    } 
 
 
   // Classlist
