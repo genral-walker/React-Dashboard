@@ -37,6 +37,5 @@
   @include responsive(720px) {
     margin-top: 7rem;
     @include flex-column;
-    gap: 5.5rem;
   }
 }
