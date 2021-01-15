@@ -40,10 +40,10 @@ body {
   padding: 2.5rem 2.5rem;
   }
   @include responsive(720px) {
-    padding: 2.5rem 2.5rem 5rem;
+    padding: 2.5rem 2.5rem;
 }
 @include responsive(400px) {
-  padding: 2.5rem 1.5rem 0;
+  padding: 2.5rem 1.5rem;
 }
 }
 
