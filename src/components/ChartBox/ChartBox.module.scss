@@ -2,6 +2,27 @@
 
 .box {
   box-shadow: $box-Shadow-2;
+  height: max-content;
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: .7s;
+
+  // Classlist
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &:nth-last-of-type(1) {
+    margin-top: -20.6rem;
+    @include responsive(720px) {
+      margin-top: unset;
+  }
+  }
+  &:nth-last-of-type(2) {
+  }
+  &:nth-last-of-type(3) {
+  }
 }
 
 .titleBox {
@@ -22,10 +43,47 @@
       width: 20%;
       cursor: pointer;
 
-      &:nth-of-type(2){
+      &:nth-of-type(2) {
         height: 45%;
       }
     }
   }
 }
 
+.buttons {
+  @include flex-between;
+  background: $color-secondary-light;
+  padding: 0.3rem 0.8rem 1.3rem;
+
+  .btns {
+    @include flex-between;
+    flex: 0 0 43%;
+    @include responsive(1280px) {
+      flex: 0 0 35%;
+    }
+    @include responsive(1200px) {
+      flex: 0 0 37.5%;
+    }
+    @include responsive(1100px) {
+      flex: 0 0 41%;
+    }
+    @include responsive(1024px) {
+      flex: 0 0 45.5%;
+    }
+    @include responsive(950px) {
+      flex: 0 0 47%;
+    }
+    @include responsive(900px) {
+      flex: 0 0 52%;
+    }
+    @include responsive(800px) {
+      flex: 0 0 54%;
+    }
+    @include responsive(768px) {
+      flex: 0 0 59%;
+    }
+    @include responsive(720px) {
+      flex: 0 0 0;
+    }
+  }
+}

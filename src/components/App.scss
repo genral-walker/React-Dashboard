@@ -11,20 +11,23 @@
   color: $color-grey-dark-3;
   text-transform: uppercase;
 }
-// ::selection {
-//   background:rgba(252, 229, 55, 0.72);
-// }
 
 
 html {
    font-size: 81.25%; //13px == 1rem
    scroll-behavior: smooth;
   ///// MIN WIDTH RULES GOES IN ASCENDING ORDER //////
+  @include responsive(1600px) {
+    font-size: 100%; //16px == 1rem
+  }
+  @include responsive(19200px) {
+    font-size: 112.5%; //18px == 1rem
+  }
 
   //////// MAX-WIDTH RULES -- IN DESCENDING ORDER ////////
 
   @include responsive(1280px) {
-     font-size: 62.5%;
+     font-size: 62.5%; //1px == 1rem
   }
 }
 
@@ -33,6 +36,15 @@ body {
   overflow-x: hidden;
   background: $color-grey-light-2;
   padding: 2.5rem 4rem;
+  @include responsive(800px) {
+  padding: 2.5rem 2.5rem;
+  }
+  @include responsive(720px) {
+    padding: 2.5rem 2.5rem 5rem;
+}
+@include responsive(400px) {
+  padding: 2.5rem 1.5rem 5rem;
+}
 }
 
 a {
@@ -50,6 +62,7 @@ textarea,
 select {
   border: none;
   background-color: inherit;
+  outline: none;
   cursor: pointer;
   &:active,
   &:focus {

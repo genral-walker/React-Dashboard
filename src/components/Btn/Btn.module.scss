@@ -1,2 +1,46 @@
 
 @import '../../utility-styles/main.scss';
+
+.btn {
+    height: 2.5rem;
+    width: 9rem;
+    background-color: $color-secondary-dark;
+    padding-left: 1.2rem;
+    color: $color-secondary;
+    letter-spacing: 0.4px;
+    font-size: 0.81rem;
+    font-weight: 700;
+    @include flex-between;
+    box-shadow: $box-Shadow;
+    @include responsive(375px) {
+    width: max-content;
+    padding-left: 0;
+    }
+
+    &:nth-of-type(2) {
+      @include responsive(720px) {
+        margin-left: 1.2rem;
+      }
+    }
+
+    & >:nth-of-type(1) {
+        margin-top: .5rem;
+        @include responsive(375px) {
+          display: none;
+        }
+    }
+
+    .icon {
+        height: 100%;
+        flex: 0 0 30%;
+        background-color: $color-grey-dark-2;
+        @include flex-center;
+      }
+    
+    
+      & * {
+        fill: $color-white;
+        height: 60%;
+        width: 3.5rem;
+      }
+}  

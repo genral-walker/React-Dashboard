@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.scss';
 
-import Home from '../pages/Home/Home';
+import DashBoard from '../pages/DashBoard/DashBoard';
 
 /*
 - Test on other browsers.
@@ -12,7 +12,7 @@ import Home from '../pages/Home/Home';
 
 const App =()=> {
   return (
-      <Home />
+      <DashBoard />
   );
 }
 

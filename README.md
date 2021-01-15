@@ -1,16 +1,21 @@
-# Getting Started with Create React App
+# Appsilon Home Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The solution to the Front end Developer task.
+Follow [This Link](https://appsilontask.netlify.app/) to view it in the browser.
 
-## Available Scripts
+## Build
 
-In the project directory, you can run:
+This Project was built with:
 
-### `npm start`
+- HTML
+- Scss
+- JavaScript
+- React
+- FushionCharts
 
-Builds the app for production to the `build` folder.\
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `PS`
+
+For verification purposes, make sure to refresh the page when you go below 720px.\
+
+Also when on mobile the charts don't allow for continuoes smooth scroll, try scrolling a little above the chart spaces

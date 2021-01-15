@@ -87,9 +87,11 @@
     }
   }
 
+
+  ////// Query FROM HERE ABOVE
   //////// 1366px MY CURRENT PC VIEWPORT SO NOT NEEDED FOR NOW TILL FURTHER
   //////// 1366px * 768px ///////
-  ////// COMMENCE FROM HERE BELOW
+  ////// Query FROM HERE BELOW
 
   @if $condition == 1280px {
     //////// 1280px * 720px || 800px || 950px ///////
@@ -100,6 +102,12 @@
   @if $condition == 1200px {
     //////// 1200px ///////
     @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $condition == 1100px {
+    //////// 1100px ///////
+    @media only screen and (max-width: 68.75em) {
       @content;
     }
   }

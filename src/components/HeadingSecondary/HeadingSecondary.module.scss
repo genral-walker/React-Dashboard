@@ -5,4 +5,10 @@
     font-size: 1.45rem;
     letter-spacing: .3px;
     font-weight: 500;
+    @include responsive(330px) {
+      font-size: 1.2rem;
+    }
+    @include responsive(260px) {
+      font-size: 1rem;
+    }
 }

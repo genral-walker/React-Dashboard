@@ -1,18 +1,5 @@
 
-import React from "react";
-import colors from '../../static';
-
-import styles from "./Home.module.scss";
-
-import HeadingPrimary from "../../components/HeadingPrimary/HeadingPrimary";
-
-import StatsBox from "../../components/StatsBox/StatsBox";
-import { ReactComponent as DataSVG } from "../../assets/svgs/database.svg";
-import { ReactComponent as UserSVG } from "../../assets/svgs/user.svg";
-import { ReactComponent as StacksSVG } from "../../assets/svgs/coin-stack.svg";
-import { ReactComponent as MoreSVG } from "../../assets/svgs/more.svg";
-
-import ChartBox from '../../components/ChartBox/ChartBox';
+import React from 'react';
 
 import FusionCharts from "fusioncharts";
 import charts from "fusioncharts/fusioncharts.charts";
@@ -23,10 +10,13 @@ charts(FusionCharts);
 
 const dataSource = {
   chart: {
+    "baseFont": "Segoe UI",
+    "baseFontSize": "10",
+    "baseFontColor": "#555555",
     "showZeroPlane": "0",
     "showBorder": "0",
     "bgColor": "#D5D5D5",
-    "bgAlpha": "100",
+    "bgAlpha": "40",
     "canvasbgColor": "#D5D5D5",
     "canvasBorderThickness": "0",
     "showAlternateHGridColor": "0",
@@ -47,19 +37,34 @@ const dataSource = {
           label: "1"
         },
         {
+          label: "2"
+        },
+        {
+          label: "3"
+        },
+        {
+          label: "4"
+        },
+        {
           label: "5"
+        },
+        {
+          label: "6"
+        },
+        {
+          label: "7"
+        },
+        {
+          label: "8"
+        },
+        {
+          label: "9"
         },
         {
           label: "10"
         },
         {
-          label: "15"
-        },
-        {
-          label: "25"
-        },
-        {
-          label: "30"
+          label: "11"
         }
       ]
     }
@@ -85,6 +90,21 @@ const dataSource = {
               value: "-6"
             },
             {
+              value: "-6"
+            },
+            {
+              value: "-5"
+            },
+            {
+              value: "-3"
+            },
+            {
+              value: "-8"
+            },
+            {
+              value: "-4"
+            },
+            {
               value: "-5"
             }
           ]
@@ -108,28 +128,58 @@ const dataSource = {
             },
             {
               value: "4"
+            },
+            {
+              value: "5"
+            },
+            {
+              value: "8"
+            },
+            {
+              value: "6"
+            },
+            {
+              value: "6"
+            },
+            {
+              value: "4"
             }
           ]
         },
         {
           data: [
             {
-              value: "22"
+              value: "16"
             },
             {
-              value: "21"
+              value: "17"
+            },
+            {
+              value: "8"
+            },
+            {
+              value: "18"
             },
             {
               value: "13"
             },
             {
-              value: "21"
+              value: "13"
+            },
+            {
+              value: "23"
+            },
+            {
+              value: "17"
+            },
+            {
+              value: "13"
             },
             {
               value: "10"
             },
             {
-              value: "17"
+              value: "18"
             }
           ]
         }
@@ -144,13 +194,13 @@ const dataSource = {
       showanchors: "0",
       data: [
         {
-          value: "1"
+          value: ".3"
         },
         {
-          value: "1"
+          value: ".8"
         },
         {
-          value: "3.2"
+          value: "1.6"
         },
         {
           value: "1.2"
@@ -160,69 +210,37 @@ const dataSource = {
         },
         {
           value: "0.2"
+        },
+        {
+          value: ".6"
+        },
+        {
+          value: "1.8"
+        },
+        {
+          value: ".8"
+        },
+        {
+          value: "1"
+        },
+        {
+          value: "1.3"
         }
       ]
     }
   ]
 };
 
-const Home = () => {
 
-  return (
-    <>
-      <HeadingPrimary>Enterprise Shiny Dashboards</HeadingPrimary>
+const ProductionBarChart =()=>{
 
-      <div className={styles.statsWrapper}>
-        <StatsBox
-          detailStat="$ 3 237 234"
-          detailName="total profit"
-          detailPercent="+4.8%"
-          Svg={DataSVG}
-          bg={colors.blue}
-        />
-
-        <StatsBox
-          detailStat="735"
-          detailName="active users"
-          detailPercent="+7.8%"
-          Svg={UserSVG}
-          bg={colors.green}
-        />
-
-        <StatsBox
-          detailStat="354"
-          detailName="new orders"
-          detailPercent="+3.7%"
-          Svg={StacksSVG}
-          bg={colors.orange}
-        />
-
-        <StatsBox
-          detailStat="12"
-          detailName="open complaints"
-          detailPercent="-6.5%"
-          Svg={MoreSVG}
-          bg={colors.red}
-        />
-
-      </div>
-
-      <section className={styles.charts}>
-        <ChartBox title='Prodction' hasIcons={true}>
-          <ReactFusioncharts
-            type="msstackedcolumn2dlinedy"
-            width="100%"
-            height="70%"
-            dataFormat="JSON"
-            dataSource={dataSource}
-          />
-        </ChartBox>
-        <ChartBox title='sales revenue by country' />
-        <ChartBox title='summary' hasIcons={true} />
-      </section>
-
-    </>
-  );
+    return <ReactFusioncharts
+      type="msstackedcolumn2dlinedy"
+      width="100%"
+      height= {window.matchMedia('(max-width: 45em)').matches ? '50%' : '60%'} 
+      dataFormat="JSON"
+      dataSource={dataSource}
+    />
 };
 
-export default Home;
+export default ProductionBarChart;

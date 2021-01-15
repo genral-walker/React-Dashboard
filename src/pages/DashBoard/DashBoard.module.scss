@@ -1,0 +1,42 @@
+@import "../../utility-styles/main.scss";
+
+.statsWrapper {
+  margin-top: 4rem;
+  @include flex-between;
+  flex-wrap: wrap;
+  @include responsive(330px) {
+    margin-top: 3rem;
+  }
+  @include responsive(260px) {
+    margin-top: 2rem;
+  }
+
+  & > :nth-of-type(3),
+  & > :last-of-type {
+    @include responsive(720px) {
+      margin-top: 1.8rem;
+    }
+    @include responsive(360px) {
+        margin-top: 0;   
+      }
+  }
+  
+  & >:not(:first-of-type) {
+    @include responsive(360px) {
+        margin-top: 2.5rem;
+      }
+  }
+}
+
+.charts {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  @include responsive(720px) {
+    margin-top: 7rem;
+    @include flex-column;
+    gap: 5.5rem;
+  }
+}

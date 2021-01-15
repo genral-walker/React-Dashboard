@@ -2,7 +2,13 @@
 @import '../../utility-styles/main.scss';
 
 .h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     font-weight: 400;
     text-transform: initial;
+    @include responsive(330px) {
+        font-size: 2.1rem;
+      }
+      @include responsive(260px) {
+        font-size: 1.8rem;
+      }
 }

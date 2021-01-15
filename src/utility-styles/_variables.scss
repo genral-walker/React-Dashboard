@@ -1,11 +1,13 @@
 
 // COLORS  
   
-// rgba(235, 254, 255, 0.159);    
-$color-primary: rgba(196, 243, 255, 0.096);
-    
+// rgba(235, 254, 255, 0.159);     rgba(196, 243, 255, 0.096);  
+$color-primary: rgba(152, 207, 221, 0.222);
+      
+$color-secondary: rgba(213, 213, 213, 0.85);    
+$color-secondary-light: rgba(213, 213, 213, .25);
+$color-secondary-dark: rgba(185, 182, 182, 0.726);    
 
-$color-secondary: rgba(213, 213, 213, 0.85);
 
 $color-blue: rgb(94, 169, 216);
 $color-green: rgb(159, 216, 94);
@@ -17,14 +19,13 @@ $color-grey-light-2: #f7f7f7;
 $color-grey-light-3: #eee;
 $color-grey-light-4: #f5f5f5;
 
+
 $color-grey-dark: gray;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: rgb(85, 85, 85);
 $color-grey-dark-4: #444;
 
 $color-white: #fff;
-$color-black: #000;
-
 
 
 
@@ -35,3 +36,13 @@ $box-Shadow: 4px -1px 5px -6px $color-grey-dark-2,
 
 $box-Shadow-2: 4px -1px 5px -6px $color-secondary,
   1px 2px 3px $color-secondary;  
+
+
+
+/*
+blue - #5EA9D8  #5ea9d8
+green - #9FD85E #9fd85e
+orange - #f0A51B #f0a51b
+red -    #FF3D5E #ff3d5e
+grey - #D5D5D5
+*/ 

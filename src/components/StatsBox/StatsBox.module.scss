@@ -5,25 +5,64 @@
   flex: 0 0 23%;
   background: $color-primary;
   box-shadow: $box-Shadow;
-  padding: 0 .7rem ;
+  padding: 0 0.7rem;
   position: relative;
-}
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: .7s;
 
+  // Classlist
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @include responsive(1280px) {
+    flex: 0 0 23.5%;
+  }
+  @include responsive(950px) {
+    flex: 0 0 23.3%;
+  }
+  @include responsive(800px) {
+    flex: 0 0 23.1%;  
+  }
+  @include responsive(800px) {
+    flex: 0 0 23.8%;
+  }
+  @include responsive(720px) {
+    height: 8.6rem;
+    flex: 0 0 49%;
+    }
+    @include responsive(720px) {
+      flex: 0 0 48%;
+    }
+    @include responsive(360px) {
+      height: 10rem;
+      flex: 0 0 100%;
+    }
+}
 
 .details {
   height: 70%;
-  padding-top: .4rem;
+  padding-top: 0.4rem;
 
   h3 {
     font-size: 2.5rem;
     font-weight: 400;
-  }
+    @include responsive(700px) {
+      font-size: 2.2rem;
+    }
+    @include responsive(360px) {
+     margin-top: .3rem;
+     margin-bottom: .5rem
+    }
+  }  
 
   p {
     @include flex-between;
     font-weight: 600;
     margin-top: .5rem;
-    
+
     .spanColorGreen {
       color: $color-green;
     }
@@ -33,16 +72,18 @@
   }
 }
 
-
 .monthlyStats {
   height: 30%;
   @include flex-between;
   background: $color-secondary;
   position: absolute;
   left: 0;
-  bottom: -.1rem;
+  bottom: -0.1rem;
   width: 100%;
   padding-left: inherit;
+  @include responsive(360px) {
+    height: 35%;
+   }
 
   select {
     background: transparent;
@@ -51,19 +92,20 @@
     letter-spacing: 0.4px;
     font-size: 0.81rem;
     font-weight: 600;
+    @include responsive(700px) {
+      padding-right: 0.7rem;
+    }
 
     option {
       background: $color-secondary;
     }
   }
 
-
   .icon {
     height: 100%;
     flex: 0 0 16%;
     @include flex-center;
   }
-
 
   .svg {
     fill: $color-grey-light-2;

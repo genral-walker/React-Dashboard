@@ -1,13 +1,19 @@
 
 @import '../../utility-styles/main.scss';
 
-select {
-    background: transparent;
-    padding-right: 1.3rem;
+.select {
     color: $color-grey-dark;
     letter-spacing: 0.4px;
     font-size: 0.81rem;
     font-weight: 600;
+    box-shadow: $box-Shadow-2;
+    padding: .7rem 2rem .7rem 1rem;
+
+
+    @include responsive (768px) {
+      padding: .7rem 0 .7rem 1rem;
+    }
+
 
     option {
       background: $color-secondary;
